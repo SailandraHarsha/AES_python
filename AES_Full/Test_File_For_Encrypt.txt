@@ -1,0 +1,8 @@
+AES GCM (Python):
+
+AES GCM (Galois Counter Mode) is a stream cipher mode for AES. It is based on the CTR mode, but is converted into a stream cipher. This provides low latency in the encryption/decryption process, and which is fast to process. As it is a stream cipher, it does not require padding. Along with this it integrates AEAD (Authenticated Encryption with Associated Data) for the authentication of the message. With AES-GCM, we have an encryption key (normally 128 bits or 256 bits) and a message, and then generate the cipher, a random nonce, and an authentication tag (and which is a message authentication code (MAC)). The tag helps authenticate the message [With PBKDF2 SHA-256 password].
+
+
+AES GCM (Python) with PBKDF2:
+
+AES GCM (Galois Counter Mode) is a stream cipher mode for AES. It is based on the CTR mode, but is converted into a stream cipher. This provides low latency in the encryption/decryption process, and which is fast to process. As it is a stream cipher, it does not require padding. Along with this it integrates AEAD (Authenticated Encryption with Associated Data) for the authentication of the message. With AES-GCM, we have an encryption key (normally 128 bits or 256 bits) and a message, and then generate the cipher, a random nonce, and an authentication tag (and which is a message authentication code (MAC)). The tag helps authenticate the message. In this case we will generate a 256-bit AES encryption key using PBKDF2, and using a random salt for the password [With SHA-256 password]. 
